@@ -3,12 +3,15 @@ A small model of an HR chatbot with few functionalities of an HR like recruitmen
 
 I made this chatbot with two technologies - one with deep learning and other one without deep learning.
 
-You can see that there are two code files attached and the one with name *hrbot_tensorflow.py* uses tensorflow library which uses deep neural networks and other file with name *hrbot.py* uses Rasa NLU.
+The one with name *hrbot.py* uses rasa nlu library and the other two files *model.py* and *responses.py* uses Tensorflow library with deep neural network.
 
-
-1. You have to install rasa_nlu using pip or you can also clone it using git command.
-2. You have to create one database with table that contains holidays/leaves details of each employee.
+1. You have to install all the packages given in the code using pip or you can also clone packages like rasa_nlu using git command.
+2. Then, you have to create one database with table that contains holidays/leaves records of each employee.
 3. You are all set, just hit run button.
+
+FOR DEEP LEARNING CHATBOT - 
+1. Run *model.py* to build model first.
+2. Run *responses.py* to use the model and fetch responses.
 
 Some screenshots are attached below - 
 
