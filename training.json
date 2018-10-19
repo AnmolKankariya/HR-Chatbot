@@ -1,0 +1,908 @@
+﻿{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "hey",
+        "intent": "greet",
+        "entities": []
+      },
+	        {
+        "text": "okay",
+        "intent": "affirm",
+        "entities": []
+      },
+	  {
+        "text": "Okay!",
+        "intent": "affirm",
+        "entities": []
+      },
+	  {
+        "text": "yup",
+        "intent": "affirm",
+        "entities": []
+      },
+	  {
+        "text": "Thanks!",
+        "intent": "thankyou",
+        "entities": []
+      },
+	  {
+        "text": "thanx",
+        "intent": "thankyou",
+        "entities": []
+      },
+	  {
+        "text": "Hello!",
+        "intent": "greet",
+        "entities": []
+      },
+	  {
+        "text": "Hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "howdy",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hey there",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hello",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "hi",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "goodbye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "good bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "stop",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "end",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "how many leaves can i take?",
+        "intent": "holiday",
+        "entities": []
+      },
+	  {
+        "text": "how many leave can i take?",
+        "intent": "holiday",
+        "entities": []
+      },
+	  {
+        "text": "can i get leave?",
+        "intent": "holiday",
+        "entities": []
+      },
+	  	  {
+        "text": "please grant me for 5 days",
+        "intent": "holiday",
+        "entities": [
+		{
+		    "start": 20,
+            "end": 21,
+            "value": "5",
+            "entity": "no_of_days"
+		}
+		]
+      },
+	  
+	  {
+        "text": "can i get leave for 3 days?",
+        "intent": "holiday",
+        "entities": [
+		{
+		    "start": 21,
+            "end": 22,
+            "value": "3",
+            "entity": "no_of_days"
+		}
+		]
+      },
+	  	  {
+        "text": "I want leave for 2 days",
+        "intent": "holiday",
+        "entities": [
+		{
+		    "start": 17,
+            "end": 18,
+            "value": "2",
+            "entity": "no_of_days"
+		}
+		]
+      },
+      {
+        "text": "I want leave for 2 days from 20 sept. to 22 sept.",
+        "intent": "holiday",
+        "entities": [
+          {
+            "start": 17,
+            "end": 18,
+            "value": "2",
+            "entity": "no_of_days"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": " 20 sept",
+            "entity": "from"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "value": " 22 sept",
+            "entity": "to"
+          }
+        ]
+      },
+	        {
+        "text": "want to get leave for 4 days from 20 sept. to 24 sept.",
+        "intent": "holiday",
+        "entities": [
+          {
+            "start": 17,
+            "end": 18,
+            "value": "4",
+            "entity": "no_of_days"
+          },
+          {
+            "start": 28,
+            "end": 36,
+            "value": " 20 sept",
+            "entity": "from"
+          },
+          {
+            "start": 40,
+            "end": 48,
+            "value": " 24 sept",
+            "entity": "to"
+          }
+        ]
+      },
+	  {
+        "text": "Hi Friends, my name is shivaji rao patil from Hyderabad. I parsuing my B-Tech in stream of computer science and engineering from nict college, xxx with aggregate 65%. I have completed HSC from GURU BASAVA junior college with aggregate of 6% and SSC from Pratibha we. N. High school with aggregate 73%",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 23,
+            "end": 40,
+            "value": "shivaji rao patil",
+            "entity": "name"
+          },
+          {
+            "start": 46,
+            "end": 55,
+            "value": "Hyderabad",
+            "entity": "current_location"
+          },
+          {
+            "start": 71,
+            "end": 77,
+            "value": "B-Tech",
+            "entity": "course"
+          },
+          {
+            "start": 91,
+            "end": 107,
+            "value": "computer science",
+            "entity": "branch"
+          },
+          {
+            "start": 129,
+            "end": 133,
+            "value": "nict",
+            "entity": "college"
+          },
+          {
+            "start": 162,
+            "end": 165,
+            "value": "65%",
+            "entity": "gpa"
+          }
+        ]
+      },
+	  {
+        "text": "I am Anmol Kankariya from MP. I did B.Tech from Amity University with my gpa 6.97 and I was working with Analytixlabs from past 4 months as a Data Science intern.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 5,
+            "end": 20,
+            "value": "Anmol Kankariya",
+            "entity": "name"
+          },
+          {
+            "start": 47,
+            "end": 64,
+            "value": " Amity University",
+            "entity": "college"
+          },
+          {
+            "start": 77,
+            "end": 81,
+            "value": "6.97",
+            "entity": "gpa"
+          },
+          {
+            "start": 105,
+            "end": 117,
+            "value": "Analytixlabs",
+            "entity": "employer"
+          },
+          {
+            "start": 143,
+            "end": 162,
+            "value": "Data Science intern",
+            "entity": "present_position"
+          }
+        ]
+      },
+	  {
+        "text": "I am Anmol Kankariya from MP. I did B.Tech from Amity University with my gpa 6.97 and I was working with Analytixlabs from past 11 months as a Data Science intern.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 5,
+            "end": 20,
+            "value": "Anmol Kankariya",
+            "entity": "name"
+          },
+          {
+            "start": 47,
+            "end": 64,
+            "value": " Amity University",
+            "entity": "college"
+          },
+          {
+            "start": 77,
+            "end": 81,
+            "value": "6.97",
+            "entity": "gpa"
+          },
+          {
+            "start": 105,
+            "end": 117,
+            "value": "Analytixlabs",
+            "entity": "employer"
+          },
+          {
+            "start": 143,
+            "end": 162,
+            "value": "Data Science intern",
+            "entity": "present_position"
+          }
+        ]
+      },
+	        {
+        "text": "I am SK Jain from Haryana. I did B.Tech from IIT Delhi with my gpa 8.9 and I was working with Google from past 10 months as a Quantitative intern.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 5,
+            "end": 12,
+            "value": "SK Jain",
+            "entity": "name"
+          },
+          {
+            "start": 18,
+            "end": 25,
+            "value": "Haryana",
+            "entity": "location"
+          },
+          {
+            "start": 33,
+            "end": 39,
+            "value": "B.Tech",
+            "entity": "course"
+          },
+          {
+            "start": 44,
+            "end": 54,
+            "value": " IIT Delhi",
+            "entity": "college"
+          },
+          {
+            "start": 66,
+            "end": 70,
+            "value": " 8.9",
+            "entity": "gpa"
+          },
+          {
+            "start": 94,
+            "end": 100,
+            "value": "Google",
+            "entity": "employer"
+          },
+          {
+            "start": 126,
+            "end": 145,
+            "value": "Quantitative intern",
+            "entity": "present_position"
+          }
+        ]
+      },
+	        {
+        "text": "Hi, my name is Carole Livamore and I was most recently a production assistant at Xanif Manufacturing. Before that I worked in quality assurance with Baker Craftwork. I help manufacturers reduce waste and save costs with better efficiencies. I was downsized from Xanif a few months ago when it released over 100 people. Now I am looking for a production supervisor role with company that wants to raise its quality standards.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "Carole Livamore",
+            "entity": "name"
+          },
+          {
+            "start": 57,
+            "end": 77,
+            "value": "production assistant",
+            "entity": "present_position"
+          },
+          {
+            "start": 80,
+            "end": 100,
+            "value": " Xanif Manufacturing",
+            "entity": "employer"
+          },
+          {
+            "start": 148,
+            "end": 164,
+            "value": " Baker Craftwork",
+            "entity": "past_employer"
+          }
+        ]
+      },
+	        {
+        "text": "want to know your procedure",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "want to know company's policy",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what's your policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "how many holidays i'll get?",
+        "intent": "holiday",
+        "entities": []
+      },
+      {
+        "text": "what's company's policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what are the rules of conduct?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "company procedure?",
+        "intent": "policy",
+        "entities": []
+      },	  
+      {
+        "text": "how many openings do you have?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "any fixed career path?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "what are the benefits in joining your company?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "can i get insurance?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what are the future opportunities?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "will i'll be getting training first?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "i didn't got my payslip",
+        "intent": "payslip",
+        "entities": []
+      },
+      {
+        "text": "what's new task for me this week?",
+        "intent": "calender",
+        "entities": []
+      },
+      {
+        "text": "name Anmol, id is 1103024456",
+        "intent": "calender",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "1103024456",
+            "entity": "Employee_Number"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Anmol",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "i want two days leave",
+        "intent": "holiday",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "two",
+            "entity": "no_of_days"
+          }
+        ]
+      },
+      {
+        "text": "please email me my payslip",
+        "intent": "payslip",
+        "entities": []
+      },
+      {
+        "text": "who is my manager?",
+        "intent": "manager_enqury",
+        "entities": []
+      },
+      {
+        "text": "am i working with same manager who is working with my friend?",
+        "intent": "manager_enqury",
+        "entities": []
+      },
+      {
+        "text": "howz my performance?",
+        "intent": "performance",
+        "entities": []
+      },
+      {
+        "text": "how am i doing?",
+        "intent": "performance",
+        "entities": []
+      },
+      {
+        "text": "i am a new employee here how can i get my department info?",
+        "intent": "department",
+        "entities": []
+      },
+	      
+      {
+        "text": "It's my pleasure to introduce myself. I'm sunil from delhi. Currently, I'm pursing my final year electronics and communication engineering from meri college of engg n tech with an aggregate of 79%.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 42,
+            "end": 47,
+            "value": "sunil",
+            "entity": "name"
+          },
+          {
+            "start": 97,
+            "end": 126,
+            "value": "electronics and communication",
+            "entity": "branch"
+          },
+          {
+            "start": 193,
+            "end": 196,
+            "value": "79%",
+            "entity": "gpa"
+          }
+        ]
+      },
+	  {
+        "text": "I applied for Production Supervisor position",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 14,
+            "end": 35,
+            "value": "Production Supervisor",
+            "entity": "position"
+          }
+        ]
+      },
+      {
+        "text": "I applied for Big data analyst position",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 14,
+            "end": 30,
+            "value": "Big data analyst",
+            "entity": "position"
+          }
+        ]
+      },
+      {
+        "text": "I applied for Data Scientist position",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 14,
+            "end": 28,
+            "value": "Data Scientist",
+            "entity": "position"
+          }
+        ]
+      },
+      {
+        "text": "applied for Project manager",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 12,
+            "end": 27,
+            "value": "Project manager",
+            "entity": "position"
+          }
+        ]
+      },
+      {
+        "text": "applied for data analyst",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 12,
+            "end": 24,
+            "value": "data analyst",
+            "entity": "position"
+          }
+        ]
+      },
+      {
+        "text": "Hi, my name is Carole Livamore and I was most recently a production assistant at Xanif Manufacturing. Before that I worked in quality assurance with Baker Craftwork. I help manufacturers reduce waste and save costs with better efficiencies. I was downsized from Xanif a few months ago when it released over 100 people. Now I am looking for a production supervisor role with company that wants to raise its quality standards.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "Carole Livamore",
+            "entity": "name"
+          },
+          {
+            "start": 57,
+            "end": 77,
+            "value": "production assistant",
+            "entity": "present_position"
+          },
+          {
+            "start": 80,
+            "end": 100,
+            "value": " Xanif Manufacturing",
+            "entity": "employer"
+          },
+          {
+            "start": 148,
+            "end": 164,
+            "value": " Baker Craftwork",
+            "entity": "past_employer"
+          }
+        ]
+      },
+	        {
+        "text": "Hi, my name is RK Sharma and I was most recently a production assistant at Microsoft. Before that I worked in quality assurance with Baker Craftwork. I help manufacturers reduce waste and save costs with better efficiencies. I was downsized from Microsoft a few months ago when it released over 100 people. Now I am looking for a data analyst role role with company that wants to raise its quality standards.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 15,
+            "end": 24,
+            "value": "RK Sharma",
+            "entity": "name"
+          },
+          {
+            "start": 51,
+            "end": 71,
+            "value": "production assistant",
+            "entity": "present_position"
+          },
+          {
+            "start": 75,
+            "end": 84,
+            "value": "Microsoft",
+            "entity": "employer"
+          },
+          {
+            "start": 133,
+            "end": 148,
+            "value": "Baker Craftwork",
+            "entity": "past_employer"
+          }
+		  ]
+		  },
+      {
+        "text": "It's my pleasure to introduce my self..well, I'm Rehana born and raised in Anantapur. I have done my schooling in Little flower Montessori English Medium High School with 77% ,then i did my plus 12 from S.S.B.N junior college with 77.7% and now i'm pursuing my final year B.tech from Anantha Lakshmi Institute of Technology and Sciences Anantapur with an aggregate of 78.33%",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 49,
+            "end": 55,
+            "value": "Rehana",
+            "entity": "name"
+          },
+          {
+            "start": 272,
+            "end": 278,
+            "value": "B.tech",
+            "entity": "course"
+          },
+          {
+            "start": 284,
+            "end": 323,
+            "value": "Anantha Lakshmi Institute of Technology",
+            "entity": "college"
+          },
+          {
+            "start": 368,
+            "end": 374,
+            "value": "78.33%",
+            "entity": "gpa"
+          }
+        ]
+      },
+      {
+        "text": "It's my pleasure to introduce myself. I'm sunil from delhi. Currently, I'm pursing my final year electronics and communication engineering from meri college of engg n tech with an aggregate of 79%.",
+        "intent": "recruitment",
+        "entities": [
+          {
+            "start": 42,
+            "end": 47,
+            "value": "sunil",
+            "entity": "name"
+          },
+          {
+            "start": 97,
+            "end": 126,
+            "value": "electronics and communication",
+            "entity": "branch"
+          },
+          {
+            "start": 193,
+            "end": 196,
+            "value": "79%",
+            "entity": "gpa"
+          }
+        ]
+      },
+	    {
+        "text": "may i know your policies?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "want to know your procedure",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "want to know company's policy",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what's your policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "how many holidays i'll get?",
+        "intent": "holiday",
+        "entities": []
+      },
+      {
+        "text": "what's company's policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what are the rules of conduct?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "company procedure?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "may i know your policies?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "want to know your procedure",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "want to know company's policy",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what's your policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "how many holidays i'll get?",
+        "intent": "holiday",
+        "entities": []
+      },
+      {
+        "text": "what's company's policy?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what are the rules of conduct?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "company procedure?",
+        "intent": "policy",
+        "entities": []
+      },	  
+
+      {
+        "text": "what are the benefits in joining your company?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "can i get insurance?",
+        "intent": "policy",
+        "entities": []
+      },
+      {
+        "text": "what are the future opportunities?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "will i'll be getting training first?",
+        "intent": "recruitment",
+        "entities": []
+      },
+      {
+        "text": "i didn't got my payslip",
+        "intent": "payslip",
+        "entities": []
+      },
+      {
+        "text": "what's new task for me this week?",
+        "intent": "calender",
+        "entities": []
+      },
+      {
+        "text": "name Anmol, id is 1103024456",
+        "intent": "calender",
+        "entities": [
+          {
+            "start": 18,
+            "end": 28,
+            "value": "1103024456",
+            "entity": "Employee_Number"
+          },
+          {
+            "start": 5,
+            "end": 10,
+            "value": "Anmol",
+            "entity": "name"
+          }
+        ]
+      },
+      {
+        "text": "i want two days leave",
+        "intent": "holiday",
+        "entities": [
+          {
+            "start": 7,
+            "end": 10,
+            "value": "two",
+            "entity": "no_of_days"
+          }
+        ]
+      },
+      {
+        "text": "please email me my payslip",
+        "intent": "payslip",
+        "entities": []
+      },
+      {
+        "text": "who is my manager?",
+        "intent": "manager_enqury",
+        "entities": []
+      },
+      {
+        "text": "am i working with same manager who is working with my friend?",
+        "intent": "manager_enqury",
+        "entities": []
+      },
+      {
+        "text": "howz my performance?",
+        "intent": "performance",
+        "entities": []
+      },
+      {
+        "text": "how am i doing?",
+        "intent": "performance",
+        "entities": []
+      },
+      {
+        "text": "i am a new employee here how can i get my department info?",
+        "intent": "department",
+        "entities": []
+      }
+    ]
+  }
+}
